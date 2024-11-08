@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b4b4b4;
+    font-family: "Marmelad", sans-serif;
+    color: #2A2A28;
+}
+
+.menu {
+    background-color: #525050;
+    width: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.fio{
+    margin-left: 15px;
+}
+.panda_smile{
+    max-width: 5%;
+}
+.panda_hello{
+    max-width: 50%;
+}
+.panda_comp{
+    max-width: 70%;
+}
+.panda_died{
+    max-width: 60%;
+}
+
+/* При наведении */
+.header_menu:hover {
+    background-color:  #f1f1f1;
+    color: black;
+}
+
+.section_1 {
+    display: flex;
+    flex-direction: row; /* Устанавливаем расположение по горизонтали */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: center; /* Выравнивание по вертикали */
+    
+    /* Ограничивает ширину секции */
+    /* max-width: 100%; */
+    padding: 0% 10%;
+}
+
+.col_img{
+    text-align: center;
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 20px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+.col_img2{
+    text-align: center;
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 20px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.col_text {
+    width:50%;
+}
+
+img {
+    /* Ограничивает ширину изображения до 100% от контейнера */
+    /* max-width: 60%; */
+    /* Устанавливает автоматическую высоту для сохранения пропорций */
+    height: auto;
+}
+
+.block_1{
+    color: #2A2A28;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #EDEDED;
+    padding: 10px 0;
+}
+
+.section_2 {
+    display: flex;
+    flex-direction: row; /* Устанавливаем расположение по горизонтали */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 0% 10%;
+    background-color:  #f1f1f1;
+}
+
+.block_2 {
+    width: 50%; /* Ограничивает ширину секции */
+    padding: 2% 0%;
+}
+
+.section_3 {
+    display: flex;
+    flex-direction: row; /* Устанавливаем расположение по горизонтали */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 0% 10%;
+}
+
+@media (max-width:450px) {
+    .panda_smile{
+        max-width: 15%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .panda_hello{
+        max-width: 150%;
+    }
+    .col_text{
+        width: 80%;
+        padding: 10px;
+    }
+    .col_img{
+        width: 20%;
+        padding: 20px 20px 20px 0;
+    }
+    .section_1{
+        padding:0 5%;
+    }
+    .block_1{
+        padding: 10px;
+    }
+    .section_2{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .block_2{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .col_img2{
+        width: 100%;
+    }
+    .section_3{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+
+}
