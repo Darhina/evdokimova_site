@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- defer указывает браузеру подгрузить скрипт асинхронно и выполнить его после загрузки HTML-страницы, чтобы не блокировать отображение контента -->
+    <script src="assets/js/lr2_zadanie_1.js" defer></script>
+    <script src="assets/js/lr2_zadanie_2.js" defer></script>
+    <title>Евдокимова Дарина ПИЭ-12 Инструментальные средства программирования</title>
+    <link rel="icon" href="favicon.png" type="image/png"> <!-- Для картинки сайта -->
+    <!-- Шрифты из гугл -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+
+    <!-- Мета-теги для описания и автора -->
+    <meta name="description" content="Сайт для лабораторных работ Евдокимовой Дарины, студента группы ПИЭ-12. Здесь представлены задания и решения лабораторных работ.">
+    <meta name="author" content="Евдокимова Дарина">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+                <img src="assets/img/panda_smile.png" alt="panda hello" class = "panda_smile">
+                <a class = "fio">Евдокимова Дарина ПИЭ-12</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="section_main">
+            <div class="col_text">
+                <div class="block_text">
+                    <div class="text_row">
+                        <h1>Добро пожаловать!</h1>
+                        <p>Сайт для лабораторных работ Евдокимовой Дарины</p>
+                        <p>ПИЭ-12 (вариант 4)</p>
+                    </div>
+                </div>
+                <details class="dropdown">
+                    <summary class="dropbtn">Другие страницы</summary>
+                    <div class="dropdown_content">
+                        <a href="index.html">Страница лр 2</a>
+                        <a href="lr3.html">Страница лр 3</a>
+                        <a href="lr4.html">Страница лр 4</a>
+                        <a href="lr5.html">Страница лр 5</a>
+                    </div>
+                </details>
+            </div>
+            <div class="col_img_main">
+                <img src="assets/img/panda_hello.png" alt="panda hello" class = "panda_hello">
+            </div>
+        </div>
+        <div class="lab_container">
+            <h2 class="lab_text">Лабораторная 2:</h2>
+            <div class="section_lr">
+                <div class="col_lr_right">
+                    <p><b>Задание 1</b></p>
+                    <p>Все входные и выходные данные в заданиях этой группы являются вещественными числами.
+                        <br>4. Дан диаметр окружности d. Найти ее длину L = π·d. В качестве значения π использовать 3.14.                    
+                    </p>
+                    <button class="btn" onclick="zadanie1()">Выполнить задание 1</button>
+                    <p><b>Задание 2</b></p>
+                    <p>Все входные и выходные данные являются целыми числами. Все числа, для которых указано количество цифр (двузначное число, трехзначное число и т. д.), считаются положительными.
+                        <br> 4. Даны целые положительные числа A и B (A> B). На отрезке длины A размещено максимально возможное количество отрезков длины B (без наложений). Используя операцию деления нацело, найти количество отрезков B, размещенных на отрезке.
+                    </p>
+                    <button class="btn" onclick="zadanie2()">Выполнить задание 2</button>
+                    <br><br>
+                </div>
+                <div class="col_img_left">
+                    <img src="assets/img/panda_comp.png" alt="panda computer" class = "panda_comp">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a class = "text_footer">Евдокимова Дарина. Все права защищены :)</a>
+    </footer>
+
+</body>
+</html>
