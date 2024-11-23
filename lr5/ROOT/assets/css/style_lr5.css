@@ -1,0 +1,328 @@
+html, body {
+    margin: 0;     /* Убираем стандартные отступы */
+    padding: 0;
+    width: 100%;
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #b4b4b4;
+    font-family: "Marmelad", sans-serif;
+    color: #2A2A28;
+}
+
+footer {
+    background-color: #525050;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    height: 10%;
+}
+
+.panda_smile{
+    max-width: 10%;
+    padding: 0.5% 1%;
+}
+
+main {
+    height: 90%;
+    background-color: #b4b4b4;
+    /* Ограничивает ширину секции */
+    /* max-width: 100%; */
+    padding: 2% 10%;
+}
+
+header {
+    background-color: #525050;
+    /* width: 100%; */
+    min-height: 50px;
+    max-height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1% 10%;
+    height: 10%;
+}
+
+.border_section {
+    margin: 10px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Устанавливаем расположение по верт */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 10px;               /* Расстояние между блоками */
+    border-radius: 15px;
+    background-color: #EDEDED;
+    padding: 20px 50px;
+    /* height: 100%; */
+}
+
+.novel_section {
+    display: flex;
+    flex-direction: row; /* Устанавливаем расположение по горизонтали */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 20px;               /* Расстояние между блоками */
+
+}
+
+.story_and_choise {
+    display: flex;
+    flex-direction: column; /* Устанавливаем расположение по верт */
+    justify-content: space-between; /* Элементы на краях */
+    /*align-items: center;  Выравнивание по вертикали */
+    gap: 20px;               /* Расстояние между блоками */
+}
+
+.img_section {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.story_section {
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+}
+.div_question_section {
+    display: none;
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+}
+
+p {
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.selection_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Устанавливаем расположение по верт */
+    justify-content: space-around; /* Пространство между колонками одинаковое */
+    align-items: left; /* Выравнивание по вертикали */
+    display: none;
+}
+
+.selection_button {
+    display: none;
+    text-align: justify;
+    border: none; /* Убираем обводку */
+    font-weight: ; /* Делаем шрифт жирным */
+    padding: 0px 0px 10px 0px; /* Увеличиваем размер кнопки (отступы внутри) */
+    cursor: pointer; /* Изменение курсора при наведении */
+    font-size: 18px;
+    font-family: "Marmelad", sans-serif;
+    color: #2A2A28;
+    background-color: #EDEDED;
+}
+
+#selection_button1, #selection_button2, #selection_button3 {
+    display: none;
+}
+
+.div_back_button {
+    display: none;
+    /* width: 100%; */
+}
+
+.start_button, .back_button{
+    font-size: 20px;
+    background-color: #525050;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+
+h1 {
+    text-align: center;
+    color: #2A2A28;
+    /* color: white; */
+    /* обводка */
+    margin: 5px 0px 10px 0px;
+}
+
+
+
+
+
+
+
+/* лр 4 */
+
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; /* Центрирует элементы по вертикали */
+    font-size: 26px;
+}
+ 
+.hamburger_menu {
+    display: none; /* Скрыто по умолчанию */
+    cursor: pointer;
+}
+ 
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5%;
+    margin: 5px 0;
+    transition: 0.3s ease; /* Плавный переход */
+}
+
+.hamburger_menu.active .hamburger_top {
+    opacity: 0; /* Скрываем полоску */
+}
+
+.hamburger_menu.active .hamburger_bottom {
+    opacity: 0; /* Скрываем полоску */
+}
+ 
+.nav_links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 20px 0 30px;
+    align-items: center; /* Центрирует элементы по вертикали */
+    white-space: nowrap; /* Запрещает перенос текста */
+    font-size: 16px;
+}
+ 
+.nav_links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width:865px) {
+    .menu {
+        font-size: 16px;
+        justify-content: center;
+    }
+    .panda_smile{
+        max-width: 10%;
+        padding: 1% 2%;
+    }
+
+    .panda_hello{
+        max-width: 150%;
+    }
+    .col_text{
+        width: 80%;
+        padding: 10px;
+    }
+    .col_img_main{
+        width: 20%;
+        padding: 20px 20px 20px 0;
+    }
+    .section_main{
+        padding: 2% 5%;
+    }
+    .block_text{
+        padding: 10px;
+    }
+    .section_lr{
+        flex-direction: column;
+    }
+    .col_lr_right{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .col_img_left{
+        width: 100%;
+    }
+    .section_3{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    /* лр 4 */
+    header {
+        /*position: sticky для эффекта закрепления */
+        position: sticky;
+        top: 0; /* Хедер "прилипает" к верху страницы при прокрутке */
+        height: 10%;
+    }
+    main {
+        height: 90%;
+    }
+
+    .nav_links {
+        display: none; /* Скрыто по умолчанию на мобильных */
+        flex-direction: column;
+        width: 100%;
+        background-color: #525050;
+        padding: 5px 0;
+        top: 8%;
+        left: 0; /* расстояние 0 пикселей от левого края */
+        z-index: 1; /* Чтобы меню отображалось поверх других элементов */
+        gap: 10px; /* Отступ между элементами флексбокс*/
+        position: fixed;
+    }
+
+    .nav_links.show_menu {
+        display: flex; /* Показываем меню при добавлении класса */
+    }
+
+    .nav_links li a {
+        margin: 10px 10px;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+
+    /* лр 5 */
+    .img_section {
+        width: 100%;
+    }
+
+    .novel_section {
+        flex-direction: column;
+    }
+    .story_and_choise {
+        order: 1; /* по умолчанию у всех элементов 0, зочу чтобы текст шел под фото на мобильн версии */
+        gap: 5px;
+    }
+    .border_section {
+        padding: 10px 20px;
+    }
+    .story_section, .div_question_section, .selection_section {
+        font-size: 12px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .selection_button {
+        font-size: 12px;
+    }
+    .back_button, .start_button {
+        font-size: 14px;
+    }
+    .text_footer {
+        font-size: 12px;
+    }
+}
