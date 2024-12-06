@@ -1,0 +1,392 @@
+html, body {
+    margin: 0;     /* Убираем стандартные отступы */
+    padding: 0;
+    width: 100%;
+
+
+    height: 100%;  
+    /* Задаем 100% высоты для html и body */
+}
+
+body {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: "Marmelad", sans-serif;
+    color: #2A2A28;
+
+    display: flex;
+    flex-direction: column;  /* Размещаем элементы вертикально */
+    height: 100%;
+    /* min-height: 100%;  */
+    /* Обеспечивает, что body будет иметь хотя бы 100% высоты экрана  100vh*/
+}
+
+footer {
+    background-color: #525050;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    /* height: 10%; */
+    height: 80px; /* Например, задаём фиксированную высоту */
+}
+
+.menu_footer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; /* Центрирует элементы по вертикали */
+    font-size: 26px;
+}
+
+.text_footer {
+    margin: 0px;
+    font-size: smaller;
+}
+
+.panda_smile{
+    max-width: 10%;
+    padding: 0.5% 1%;
+}
+
+main {
+    /* height: 90%; */
+    /* Ограничивает ширину секции */
+    /* max-width: 100%; */
+    padding: 0% 10%;
+
+
+    flex: 1;  
+    /* Main занимает всё доступное пространство */
+    box-sizing: border-box;   /* Чтобы padding учитывался в общей ширине */
+}
+
+header {
+    /* width: 100%; */
+    background-color: #525050;
+    /* width: 100%; */
+    /* min-height: 50px; */
+    /* max-height: 10%; */
+    display: flex;
+    align-items: center;
+    padding: 1% 10%;
+    /* height: 10%; */
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+    color: #2A2A28;
+    /* color: white; */
+    /* обводка */
+    margin: 0px;
+    padding: auto;
+}
+
+/* лр 6 */
+
+.heading {
+    display: flex;
+    justify-content: space-between;  /* Распределяем элементы на максимальное расстояние */
+    width: 100%;                     /* Ширина родительского элемента */
+    /* height: 20%; */
+    margin: 20px 0px;
+    /* height: 40px; */
+    align-items: center;      /* Центрирует по вертикали */
+    gap: 15px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;  /* Распределяет элементы по ширине с равными промежутками */
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    width: 60%;
+    /* height: 40%; */
+    padding: 5px 10px;
+    height: 30%;
+}
+
+.search_area {
+    /* width: 60%; */
+    text-align: left;
+    font-size: 18px;
+    background: transparent; /* Убирает фон */
+    border: none;             /* Убирает границу */
+    outline: none;            /* Убирает контур (обводку), который появляется при фокусе */
+    width: 80%;
+}
+
+.search_button {
+    background: transparent; /* Убирает фон */
+    border: none;             /* Убирает границу */
+    width: 50px;
+    height: 50px;
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.search_button_svg {
+    width: 120%;
+    /* width: 50%; */
+}
+
+.area_product_card {
+    display: flex;
+    flex-wrap: wrap;  /* Чтобы элементы переходили на следующую строку, если не помещаются */
+    
+    justify-content: space-evenly;   
+    /* Распределяет элементы по ширине */
+    gap: 10px;
+
+    /* gap: auto; */
+
+}
+
+/* .product_card:last-child {
+    margin-right: 660px; 5*110 Убираем отступ для последнего элемента
+} */
+
+/* .area_product_card > .product_card:nth-last-child(2) {
+    margin-right: 10px; Отступ между первым и последним элементом
+} 
+*/
+
+.product_card{
+    width: 200px;
+    /* flex: 0 1 100px;  Устанавливаем ширину для каждого элемента */
+    /*margin-right: 10px;  Отступ между элементами */
+}
+
+.background_img_product_card {
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    /* width: 25%; */
+    width: 100%;
+}
+
+.img_product_card {
+    width: 100%;
+    /* height: 100%; */
+    margin: auto; /* Центрирует по горизонтали и вертикали */
+}
+
+.text_product_card .text_product_card_description{
+    text-align: justify; /* Растягивание текста по ширине*/
+}
+
+/* .text_product_card {
+    font-weight: bold;
+} */
+
+.div_nothing_found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.text_nothing_found {
+    font-size: 20px;
+}
+
+.div_what_found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.text_what_found {
+    font-size: 20px;
+}
+
+
+
+
+/* Навигация лр 4 */
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; /* Центрирует элементы по вертикали */
+    font-size: 26px;
+
+    width: 30%;
+}
+ 
+.hamburger_menu {
+    display: none; /* Скрыто по умолчанию */
+    cursor: pointer;
+}
+ 
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5%;
+    margin: 5px 0;
+    transition: 0.3s ease; /* Плавный переход */
+}
+
+.hamburger_menu.active .hamburger_top {
+    opacity: 0; /* Скрываем полоску */
+}
+
+.hamburger_menu.active .hamburger_bottom {
+    opacity: 0; /* Скрываем полоску */
+}
+ 
+.nav_links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 20px 0 30px;
+    align-items: center; /* Центрирует элементы по вертикали */
+    /* white-space: nowrap; */
+    /* Запрещает перенос текста */
+    font-size: 16px;
+
+
+    flex-wrap: wrap;
+    /* Чтобы элементы переходили на следующую строку, если не помещаются */
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+}
+ 
+.nav_links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+@media (max-width:865px) {
+    main {
+        padding: 0% 5%;
+    }
+    /* Навигация лр 4 */
+    header {
+        /*position: sticky для эффекта закрепления */
+        position: sticky;
+        top: 0; /* Хедер "прилипает" к верху страницы при прокрутке */
+        height: 10%;
+    }
+
+    .nav_links {
+        display: none; /* Скрыто по умолчанию на мобильных */
+        flex-direction: column;
+        width: 100%;
+        background-color: #525050;
+        padding: 10px 0;
+        top: 9%;
+        left: 0; /* расстояние 0 пикселей от левого края */
+        z-index: 1; /* Чтобы меню отображалось поверх других элементов */
+        gap: 10px; /* Отступ между элементами флексбокс*/
+        position: fixed;
+    }
+
+    .nav_links.show_menu {
+        display: flex; /* Показываем меню при добавлении класса */
+    }
+
+    .nav_links li a {
+        margin: 10px 10px;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+
+    .header_nav {
+        /* justify-content: center; */
+        /* width: 50%; */
+        /* Запрещает перенос текста */
+
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        justify-content: flex-start; /* Бургер слева */
+        height: 100%;
+    }
+
+    .menu {
+        flex-grow: 1; /* Заголовок будет занимать оставшееся пространство */
+        color: white;
+        margin: 0;
+        text-align: center; /* Заголовок по центру */
+
+        font-size: 14px;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .panda_smile{
+        /* max-width: 10%; */
+        padding: 1% 2%;
+        /* height: 100%; */
+    }
+
+    .text_footer {
+        font-size: 40%;
+    }
+
+    /* лр 6 */
+    .heading {
+        flex-direction: column;
+        margin: 10px 0 0 0;
+        gap: 5px;
+    }
+
+    .search {
+        margin: 10px 0px 0px;
+        width: 80%;
+        height: 20px;
+    }
+
+    .search_area {
+        font-size: 70%;
+    }
+
+    .search_button {
+        height: 20px;
+        width: 10%;
+        padding: 0;
+    }
+
+    .search_button_svg {
+        height: 100%;
+    }
+
+    .product_card {
+        width: 100px;
+        font-size: 50%;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
+
+    .div_what_found, .div_nothing_found {
+        margin: 10px 0 10px 0;
+    }
+    .text_what_found, .text_nothing_found {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Мета-теги для описания и автора -->
+    <meta name="description" content="Сайт для лабораторных работ Евдокимовой Дарины, студента группы ПИЭ-12. Здесь представлены задания и решения лабораторных работ.">
+    <meta name="author" content="Евдокимова Дарина">
+    <meta name="keywords" content="лабораторные работы, Евдокимова Дарина, ПИЭ-12, решение задач, сайт студента">
+
+    <title>Евдокимова Дарина ПИЭ-12 Инструментальные средства программирования</title>
+    <link rel="icon" href="../favicon.png" type="image/png"> <!-- Для картинки сайта -->
+
+    <!-- Шрифты из гугл -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    
+    <!-- defer указывает браузеру подгрузить скрипт асинхронно и выполнить его после загрузки HTML-страницы, чтобы не блокировать отображение контента -->
+    <script src="../assets/js/hamburger_menu.js" defer></script>
+    <script src="../assets/js/lr3.js" defer></script>
+    
+    <!-- Для вывода уравнений MathJax-->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="hamburger_menu">
+                <div class="hamburger hamburger_top"></div>
+                <div class="hamburger hamburger_middle"></div>
+                <div class="hamburger hamburger_bottom"></div>
+            </div>
+            
+            <div class="menu">
+                <img src="../assets/img/panda_smile.png" alt="panda hello" class = "panda_smile">
+                <a class="fio">Евдокимова Дарина ПИЭ-12</a>
+            </div>
+            
+            <ul class="nav_links">
+                <li><a href="../index.html">Лабораторная 2</a></li>
+                <li><a href="lr3.html">Лабораторная 3</a></li>
+                <li><a href="lr4.html">Лабораторная 4</a></li>
+                <li><a href="lr5.html">Лабораторная 5</a></li>
+                <li><a href="lr6.html">Лабораторная 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="section_main">
+            <div class="col_text">
+                <div class="block_text">
+                    <div class="text_row">
+                        <h1>Добро пожаловать!</h1>
+                        <p>Сайт для лабораторных работ Евдокимовой Дарины</p>
+                        <p>ПИЭ-12 (вариант 4)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col_img_main">
+                <img src="../assets/img/panda_hello.png" alt="panda hello" class = "panda_hello">
+            </div>
+        </div>
+        <div class="lab_container">
+            <h2 class="lab_text">Лабораторная 3:</h2>
+            <div class="section_lr">
+                <div class="col_lr_right">
+                    <h3><b>Задание 1</b></h3>
+                    <p>Во всех заданиях данной группы требуется вывести текст «TRUE», если приведенное высказывание для предложенных исходных данных является истинным, 
+                        и текст «FALSE» в противном случае. Все числа, для которых указано количество цифр (двузначное число, трехзначное число и т. д.), 
+                        считаются целыми положительными.
+                        <br>4. Даны два целых числа: A, B. Проверить истинность высказывания: «Справедливы неравенства A > 2 и B ≤ 3».
+                    </p>
+                    <p>Проверка условия: A > 2 и B ≤ 3</p>
+                    <div>
+                    <label for="inputA">Введите A: </label>
+                    <input type="number" id="inputA">
+                    </div>
+                    <div>
+                    <label for="inputB">Введите B: </label>
+                    <input type="number" id="inputB">
+                    </div>
+                    <div>
+                    <button class="btn" onclick="lr3_1_sravnenie()">Проверить</button>
+                    </div>
+                    <p class="result" id="result_lr3_1">Результат:</p>
+
+
+                    <h3><b>Задание 2</b></h3>
+                    <p>4. Даны три целых числа. Найти количество отрицательных и количество четных чисел в исходном наборе.</p>
+                    <p>Введите три целых числа:</p>
+                    
+                    <div>
+                    <label for="num1">Число 1: </label>
+                    <input type="number" id="num1">
+                    </div>
+                    <div>
+                    <label for="num2">Число 2: </label>
+                    <input type="number" id="num2">
+                    </div>
+                    <div>
+                    <label for="num3">Число 3: </label>
+                    <input type="number" id="num3">
+                    </div>
+                    <button class="btn" onclick="lr3_2_count_numbers()">Посчитать</button>
+                    
+                    <p class="result" id="otricateln">Количество отрицательных чисел:</p>
+                    <p class="result" id="chetn">Количество чётных чисел:</p>
+                </div>
+                <div class="col_img_left">
+                    <img src="../assets/img/panda_died.png" alt="panda computer" class = "panda_died">
+                </div>
+            </div>
+
+            <div class="section_lr">
+                <div class="col_lr_right">
+                    <h3><b>Задание 3</b></h3>
+                    <p>Вычислить значение функции y=f(x) при произвольных значениях x. Вариант задания 4, функция представлена ниже.</p>
+                    <p>
+                        $$ 
+                        y = \left\{
+                        \begin{array}{ll}
+                        x + \frac{\cos(a x)}{x^2 + 1}, & \text{при } 3 \leq x \leq 5 \\
+                        b \sin \frac{a}{x}, & \text{при } x > 5 \\
+                        e^x + \ln |x|, & \text{при } x < 3
+                        \end{array} \right.
+                        $$
+                    </p>
+                    <p>Введите значение x:</p>
+                    <label for="input_x_lr3_3">Значение x: </label>
+                    <input type="number" id="input_x_lr3_3">
+
+                    <button class="btn" onclick="lr3_3_function()">Вычислить</button>
+                    
+                    <p class="result" id="result_lr3_3">Значение y:</p>
+
+
+                    <h3><b>Задание 4</b></h3>
+                    <p>Вычислить значение функции y=f(x) при произвольных значениях x. Вариант задания 4, функция представлена ниже. Для вычисления значения функции использовать оператор switch.</p>
+                    <p>
+                        $$ 
+                        y = \left\{
+                        \begin{array}{ll}
+                        x + \frac{\cos(\alpha x)}{x^2 + 1}, & \text{при } x = 5 \\
+                        b \sin \frac{a}{x}, & \text{при } x = 8 \\
+                        e^x + \ln |x|, & \text{при } x = 2
+                        \end{array} \right.
+                        $$
+                    </p>
+                    <p>Введите значение x:</p>
+                    <label for="input_x_lr3_4">Значение x: </label>
+                    <input type="number" id="input_x_lr3_4">
+
+                    <button class="btn" onclick="lr3_4_function()">Вычислить</button>
+                    
+                    <p class="result" id="result_lr3_4">Значение y:</p>
+                </div>
+                <div class="col_img_left">
+                    <img src="../assets/img/panda_confused.png" alt="panda confused" class = "panda_confused">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu">
+            <a class = "text_footer">Евдокимова Дарина. Все права защищены :)</a>
+        </div>
+    </footer>
+</body>
+</html>

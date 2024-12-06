@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style_lr5.css">
+
+    <!-- Мета-теги для описания и автора -->
+    <meta name="description" content='Визуальная новелла "Это наш лес!". Сайт для лабораторных работ Евдокимовой Дарины, студента группы ПИЭ-12. Здесь представлены задания и решения лабораторных работ.'>
+    <meta name="author" content="Евдокимова Дарина">
+    <meta name="keywords" content="лабораторные работы, Евдокимова Дарина, ПИЭ-12, решение задач, сайт студента">
+
+    <title>Евдокимова Дарина ПИЭ-12 Инструментальные средства программирования</title>
+    <link rel="icon" href="../favicon.png" type="image/png"> <!-- Для картинки сайта -->
+
+    <!-- Шрифты из гугл -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+
+    <!-- defer указывает браузеру подгрузить скрипт асинхронно и выполнить его после загрузки HTML-страницы, чтобы не блокировать отображение контента -->
+    <script src="../assets/js/hamburger_menu.js" defer></script>
+    <script src="../assets/js/lr5_selector.js" defer></script>
+    <script src="../assets/js/lr5.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="hamburger_menu">
+                <div class="hamburger hamburger_top"></div>
+                <div class="hamburger hamburger_middle"></div>
+                <div class="hamburger hamburger_bottom"></div>
+            </div>
+            
+            <div class="menu">
+                <img src="../assets/img/panda_smile.png" alt="panda hello" class = "panda_smile">
+                <a class="fio">Евдокимова Дарина ПИЭ-12</a>
+            </div>
+            
+            <ul class="nav_links">
+                <li><a href="../index.html">Лабораторная 2</a></li>
+                <li><a href="lr3.html">Лабораторная 3</a></li>
+                <li><a href="lr4.html">Лабораторная 4</a></li>
+                <li><a href="lr5.html">Лабораторная 5</a></li>
+                <li><a href="lr6.html">Лабораторная 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="border_section">
+            <h1 class="lab_text">Визуальная новелла "Это наш лес!"</h1>
+            <div class="novel_section">
+                <div class="story_and_choise">
+                    <div class="story_section" id="story_section">
+                        <p> В лесу, среди высоких деревьев и уютных полян, живут три необычных брата-медведя. Каждый из них не только уникален по внешности, но и обладает своим характером и подходом к жизни, что делает их дружную семью по-настоящему неповторимой. 
+                            <br>Гризли — энергичный и неугомонный лидер, он обожает быть в центре внимания и стремится взять на себя ответственность в любой ситуации, иногда немного поспешно. <br>Панда — черно-белый медведь с мягким сердцем, всегда в поисках комфорта и гармонии. Он искренне заботится о своих братьях и готов поддержать их, несмотря на собственные сомнения. 
+                            <br>Белый — загадочный и молчаливый младший брат, который своим спокойствием и решимостью компенсирует эмоциональность других. Его молчаливость скрывает острый ум и уникальные способности, которые выручают братьев в сложных ситуациях. 
+                            <br>Эти три медведя, несмотря на различия, всегда вместе. Они поддерживают друг друга в любых приключениях, будь то поиски новой пиццерии или спасение их лесного дома от надвигающейся угрозы.
+                        </p>
+                    </div>
+                    <div class="div_question_section" id="div_question_section">
+                    </div>
+                    <div class="selection_section" id="selection_section"> 
+                        <button id="selection_button1" class="selection_button" onclick=made_choice(event)>1☐</button>
+                        <button id="selection_button2" class="selection_button" onclick=made_choice(event)>2</button>
+                        <button id="selection_button3" class="selection_button" onclick=made_choice(event)>3</button>
+                    </div>
+                    <div class="div_back_button" id="div_back_button"> 
+                        <button class="back_button" id="back_button" onclick=made_choice(event)> Назад </button>
+                    </div>
+                    <div class="div_start_button" id="div_start_button"> 
+                        <button class="start_button" id="start_button" onclick=made_choice(event)> Начать </button>
+                    </div>
+                </div>
+                <img src="../assets/img/lr5/1.webp" alt="Изображение эпизода новеллы" class="img_section" id="img_section"> </img>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu">
+            <p class = "text_footer">© Евдокимова Дарина. Все права защищены :)</p>
+        </div>
+    </footer>
+</body>
+</html>
